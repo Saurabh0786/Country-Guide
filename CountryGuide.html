@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Guide</title>
+    <link rel="stylesheet" href="CountryGuide.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country Guide App</h1>
+      <h2>Using HTML, CSS, JS</h2>
+      <div class="input-group">
+        <input
+          id="countryInput"
+          type="text"
+          placeholder="Enter the Country Name"
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="countryInfo" class="hide">
+        <div id="flex">
+          <div class="info-container">
+            <h2 id="countryName"></h2>
+          </div>
+          <div class="info-container">
+            <img id="countryFlag" alt="flag" />
+          </div>
+        </div>
+        <p><strong>Capital : </strong><span id="capital"></span></p>
+        <p><strong>Population : </strong><span id="population"></span></p>
+        <p><strong>Currency : </strong><span id="currency"></span></p>
+        <p><strong>Language : </strong><span id="language"></span></p>
+        <p><strong>Continent : </strong><span id="continent"></span></p>
+        <p><strong>Timezone : </strong><span id="timezone"></span></p>
+      </div>
+      <p id="errorMsg" class="hide">Country not found.Please try again.</p>
+    </div>
+    <script src="CountryGuide.js"></script>
+  </body>
+</html>
